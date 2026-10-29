@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FastAPI Template - Create</title>
+  </head>
+<body>
+    <h1>Create New Student Data</h1>
+    <form method="post" action="/student/create">
+    <table>
+    <tr>
+        <td>科系 (dept)</td>
+        <td>學號 (stuid)</td>
+        <td>姓名 (name)</td>
+        <td>身分證字號 (id)</td>
+        <td>身高 (height)</td>
+        <td>體重 (weight)</td>
+        <td>數學 (math)</td>
+        <td>英文 (english)</td>
+        <td>國文 (chinese)</td>
+        <td>生日 (birthday)</td>
+        <td>IQ (iq)</td>
+        <td>居住城市 (city)</td>
+        <td>導師 (mentor)</td>
+    </tr>
+    <tr>
+        <td><input type="text" name="dept"></td>
+        <td><input type="text" name="stuid" ></td>
+        <td><input type="text" name="name"  ></td>
+        <td><input type="text" name="id" ></td>
+        <td><input type="number"  name="height" ></td>
+        <td><input type="number"  name="weight" ></td>
+        <td><input type="number" name="math"></td>
+        <td><input type="number" name="english" ></td>
+        <td><input type="number" name="chinese" ></td>
+        <td><input type="date" name="birthday" ></td>
+        <td><input type="number" name="iq" ></td>
+        <td><input type="text" name="city"></td>
+        <td><input type="text" name="mentor" ></td> 
+    </tr>
+    </table>
+    <input type="submit" value="Create">
+    </form>
+</body>
+</html>
